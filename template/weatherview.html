@@ -1,0 +1,14 @@
+<div class="w3-large w3-text-shadow w3-animate-opacity" style="color: #924da3"> {{data.city}} </div>
+<div class="w3-opacity"> {{data.text | uppercase }}</div>
+<div class="w3-opacity"> {{ data.today | date}}</div>
+<div class="w3-row">
+  <div class="w3-container w3-col s1 w3-animate-fading w3-padding-16">
+    <i style="font-size: 45px;color: #924da3;text-align: center;" class="{{data.icon}}"></i> 
+  </div>
+  <div class="w3-col s2 w3-animate-opacity w3-padding" style="color: #924da4">
+	  
+	   			{{data.currentTemp}} <span ng-show="data.symbol"> &#x2103;</span><span ng-hide="data.symbol"> &#x2109;</span>
+	  		
+  </div>
+  
+</div>
